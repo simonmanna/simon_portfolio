@@ -318,55 +318,6 @@ export default function EnhancedPortfolio() {
               impact.
             </p>
           </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: <Code className="w-10 h-10" />,
-                title: "Quantum Development",
-                description:
-                  "Master of quantum algorithms, neural architectures, and next-gen computing paradigms that revolutionize software engineering.",
-                color: "electric-blue",
-                delay: 0,
-              },
-              {
-                icon: <Brain className="w-10 h-10" />,
-                title: "AI Consciousness",
-                description:
-                  "Deep learning systems, cognitive computing, and artificial general intelligence research for tomorrow's solutions.",
-                color: "blue-400",
-                delay: 0.2,
-              },
-              {
-                icon: <Rocket className="w-10 h-10" />,
-                title: "System Leadership",
-                description:
-                  "Commanding technical teams and architecting solutions for the digital transformation era with precision and innovation.",
-                color: "blue-500",
-                delay: 0.4,
-              },
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: item.delay }}
-                className="glass-card-hover p-8 group"
-              >
-                <div
-                  className={`text-${item.color} mb-6 group-hover:animate-glow transition-all duration-300`}
-                >
-                  {item.icon}
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-slate-200 group-hover:text-electric-blue transition-colors">
-                  {item.title}
-                </h3>
-                <p className="text-slate-400 group-hover:text-slate-300 transition-colors leading-relaxed">
-                  {item.description}
-                </p>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
       {/* Skills Section */}
