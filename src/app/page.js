@@ -150,7 +150,7 @@ export default function EnhancedPortfolio() {
       {/* Hero Section */}
 // Replace the Hero section in your EnhancedPortfolio component
 <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-  <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+  <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-2 gap-12 items-center">
     {/* Left Column - Text Content */}
     <motion.div
       initial={{ opacity: 0, x: -50 }}
@@ -166,7 +166,8 @@ export default function EnhancedPortfolio() {
       </h1>
       
       <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
-        I'm a passionate developer specializing in modern web technologies.
+        I'm a passionate software developer specializing in fullstack systems development and AI Engineering.
+		<br/>
         Let's build something amazing together!
       </p>
       
@@ -264,13 +265,14 @@ export default function EnhancedPortfolio() {
             className="text-center mb-16"
           >
             <h2 className="text-5xl md:text-6xl font-bold mb-8">
-              <span className="gradient-text metal-shine">About The System</span>
+              <span className="gradient-text metal-shine">About Me</span>
             </h2>
             <div className="section-divider" />
             <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-              Advanced AI-powered developer with <span className="text-electric-blue font-semibold">neural network expertise</span> and 
-              <span className="text-blue-400 font-semibold"> quantum computing insights</span>. Specialized in building 
-              <span className="text-electric-blue font-semibold"> next-generation applications</span> that push the boundaries of what's possible.
+Experienced AI & Machine Learning Engineer, Data Scientist, and Full Stack Developer with a passion for leveraging data-driven insights to solve complex problems and designing comprehensive AI systems.<br/>
+Expert in developing and deploying ML models, analyzing large datasets, and translating insights into actionable business strategies.<br/>
+Skilled in building end-to-end web and mobile applications using modern full stack technologies, integrating backend systems, APIs, and intuitive user interfaces.<br/>
+Capable of delivering robust, scalable, and production-ready solutions that bridge AI and software engineering for real-world impact.
             </p>
           </motion.div>
 
@@ -330,7 +332,7 @@ export default function EnhancedPortfolio() {
             className="text-center mb-16"
           >
             <h2 className="text-5xl md:text-6xl font-bold mb-8">
-              <span className="gradient-text metal-shine">System Capabilities</span>
+              <span className="gradient-text metal-shine">Skills and Expertise</span>
             </h2>
             <div className="section-divider" />
             <p className="text-slate-400 text-lg">Advanced technological arsenal for building the future</p>
@@ -339,39 +341,52 @@ export default function EnhancedPortfolio() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                category: "Neural Frontend",
-                icon: <Globe className="w-7 h-7" />,
-                skills: ["React Quantum", "Next.js 14", "TypeScript AI", "Neural CSS", "Motion Dynamics"],
-                color: "electric-blue"
-              },
-              {
-                category: "Core Systems",
-                icon: <Database className="w-7 h-7" />,
-                skills: ["Node Fusion", "Python AI", "Quantum DB", "GraphQL+", "Neural APIs"],
+                category: "Programming Languages",
+                icon: <Code className="w-7 h-7" />,
+                skills: ["JavaScript", "TypeScript","Python", "PHP", "C", "C++"],
                 color: "blue-400"
               },
               {
-                category: "AI/ML Core",
+                category: "Frameworks/Technologies",
+                icon: <Globe className="w-7 h-7" />,
+                skills: ["Node.js", "Express.js", "React", "NestJS", "Laravel", "Flask", "React Native", "Deno"],
+                color: "electric-blue"
+              },
+              {
+                category: "Frontend Skills",
+                icon: <Globe className="w-7 h-7" />,
+                skills: ["React.js", "Next.js", "Vue.js", "Javascript",
+				"HTML5 & CSS3", "Tailwind CSS/Bootstrap"],
+                color: "electric-blue"
+              },
+              {
+                category: "DevOps & CI/CD",
+                icon: <Database className="w-7 h-7" />,
+                skills: ["Git (GitHub, GitLab)", "Docker", "AWS", "Google Cloud", "Vercel", "Serverless"],
+                color: "blue-400"
+              },
+              {
+                category: "Database Skills",
+                icon: <Database className="w-7 h-7" />,
+                skills: ["PostgreSQL", "MySQL", "SQLite", "Supbase", "GraphQL"],
+                color: "blue-400"
+              },
+              {
+                category: "AI/ML Skills",
                 icon: <Brain className="w-7 h-7" />,
-                skills: ["TensorFlow Pro", "PyTorch Neural", "Quantum ML", "OpenAI GPT", "Transformer++"],
+                skills: ["GPTs", "Prompt Engineering", "Automation", "AI Agents", "TensorFlow", "PyTorch", "LLMs"],
                 color: "blue-500"
               },
               {
-                category: "Cloud Matrix",
+                category: "Soft Skills",
                 icon: <Zap className="w-7 h-7" />,
-                skills: ["AWS Quantum", "Neural Docker", "K8s Swarm", "Auto-Deploy", "Edge Computing"],
+                skills: ["Leadership", "Entrepreneurship", "Product Management", "Communication", "Edge Computing"],
                 color: "electric-blue"
               },
               {
-                category: "Code Languages",
-                icon: <Code className="w-7 h-7" />,
-                skills: ["JavaScript++", "Python AI", "TypeScript+", "Rust Quantum", "Go Neural"],
-                color: "blue-400"
-              },
-              {
-                category: "Power Tools",
+                category: "Security & Testing",
                 icon: <Cpu className="w-7 h-7" />,
-                skills: ["Neural Git", "Quantum IDE", "AI Jupyter", "Design Matrix", "Flow Control"],
+                skills: ["JWT", "Jest"],
                 color: "blue-500"
               }
             ].map((category, index) => (
