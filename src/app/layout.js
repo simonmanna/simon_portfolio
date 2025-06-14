@@ -1,51 +1,54 @@
-import { Inter } from 'next/font/google'
-import './globals.css'
+import { Inter } from "next/font/google";
+import "./globals.css";
 
-const inter = Inter({ 
-  subsets: ['latin'],
-  variable: '--font-inter',
-  display: 'swap',
-})
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
 
 export const metadata = {
-  title: 'OPTIMUS DEV | AI Developer Portfolio',
-  description: 'Advanced AI-powered developer specializing in neural networks, quantum computing, and next-generation applications. Expert in React, Python, machine learning, and innovative technology solutions.',
+  title: "SIMON DEV | Software and AI Developer Portfolio",
+  description:
+    "Advanced AI-powered developer specializing in AI and Full Stack development. Expert in React, Python, machine learning, and innovative technology solutions.",
   keywords: [
-    'AI developer',
-    'machine learning engineer', 
-    'neural networks',
-    'quantum computing',
-    'React developer',
-    'Python AI',
-    'software architect',
-    'deep learning',
-    'computer vision',
-    'full-stack developer'
-  ].join(', '),
-  authors: [{ name: 'Optimus Dev' }],
-  creator: 'Optimus Dev',
+    "AI developer",
+    "machine learning engineer",
+    "neural networks",
+    "quantum computing",
+    "React developer",
+    "Python AI",
+    "software architect",
+    "deep learning",
+    "computer vision",
+    "full-stack developer",
+  ].join(", "),
+  authors: [{ name: "Optimus Dev" }],
+  creator: "Optimus Dev",
   openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://optimus-dev-portfolio.vercel.app',
-    title: 'OPTIMUS DEV | AI Developer Portfolio',
-    description: 'Advanced AI-powered developer with expertise in neural networks and quantum computing',
-    siteName: 'Optimus Dev Portfolio',
+    type: "website",
+    locale: "en_US",
+    url: "https://optimus-dev-portfolio.vercel.app",
+    title: "SIMON DEV | AI Developer Portfolio",
+    description:
+      "Advanced AI-powered developer with expertise in Software Development and AI",
+    siteName: "SIMON Dev Portfolio",
     images: [
       {
-        url: '/og-image.jpg',
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: 'Optimus Dev - AI Developer Portfolio',
+        alt: "SIMON Dev - AI/SOFTWARE Developer Portfolio",
       },
     ],
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'OPTIMUS DEV | AI Developer Portfolio',
-    description: 'Advanced AI-powered developer with expertise in neural networks and quantum computing',
-    creator: '@optimusdev',
-    images: ['/og-image.jpg'],
+    card: "summary_large_image",
+    title: "OPTIMUS DEV | AI Developer Portfolio",
+    description:
+      "Advanced AI-powered developer with expertise in Software Development and AI",
+    creator: "@optimusdev",
+    images: ["/og-image.jpg"],
   },
   robots: {
     index: true,
@@ -53,25 +56,25 @@ export const metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   verification: {
-    google: 'your-google-verification-code',
+    google: "your-google-verification-code",
   },
-}
+};
 
 export const viewport = {
-  width: 'device-width',
+  width: "device-width",
   initialScale: 1,
   maximumScale: 1,
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#0066cc' },
-    { media: '(prefers-color-scheme: dark)', color: '#00d4ff' },
+    { media: "(prefers-color-scheme: light)", color: "#0066cc" },
+    { media: "(prefers-color-scheme: dark)", color: "#00d4ff" },
   ],
-}
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -82,21 +85,26 @@ export default function RootLayout({ children }) {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
       </head>
-      <body className={`${inter.className} antialiased bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 min-h-screen`}>
+      <body
+        className={`${inter.className} antialiased bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 min-h-screen`}
+      >
         {/* Loading animation */}
-        <div id="loading-screen" className="fixed inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 z-50 flex items-center justify-center">
+        <div
+          id="loading-screen"
+          className="fixed inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 z-50 flex items-center justify-center"
+        >
           <div className="text-center">
             <div className="text-6xl mb-4 animate-bounce">🤖</div>
-            <div className="text-2xl font-bold gradient-text animate-pulse">OPTIMUS DEV</div>
+            <div className="text-2xl font-bold gradient-text animate-pulse">
+              OPTIMUS DEV
+            </div>
             <div className="w-32 h-1 bg-electric-gradient rounded-full mx-auto mt-4 animate-pulse"></div>
           </div>
         </div>
-        
+
         {/* Main content */}
-        <main>
-          {children}
-        </main>
-        
+        <main>{children}</main>
+
         {/* Loading script */}
         <script
           dangerouslySetInnerHTML={{
@@ -116,5 +124,5 @@ export default function RootLayout({ children }) {
         />
       </body>
     </html>
-  )
+  );
 }

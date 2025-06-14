@@ -1105,7 +1105,7 @@ export default function EnhancedPortfolio() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
-              <a href="mailto:your.email@example.com" className="btn-optimus">
+              <a href="mailto:simonmannait@gmail.com" className="btn-optimus">
                 <span className="flex items-center justify-center gap-3">
                   <Mail size={20} />
                   Email Me
