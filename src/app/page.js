@@ -186,10 +186,10 @@ export default function EnhancedPortfolio() {
           >
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
               <span className="gradient-text metal-shine block">
-                Simon Manna
+                Simon O Manna
               </span>
               <span className="text-slate-300 block text-3xl md:text-4xl mt-4">
-                Software Developer and AI Engineer
+                Software Developer and AI Engineers
               </span>
             </h1>
 
