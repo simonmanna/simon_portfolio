@@ -9,15 +9,15 @@ const Products = () => {
 
   const products = {
     "green-beans": [
-      {
-        id: 1,
-        name: "AA Green Beans",
-        type: "Arabica",
-        origin: "Mount Elgon",
-        price: "$8.50/kg",
-        description: "Premium Arabica with wine-like acidity and floral tones.",
-        image: "/images/green-beans.jpg",
-      },
+      // {
+      //   id: 1,
+      //   name: "AA Green Beans",
+      //   type: "Arabica",
+      //   origin: "Mount Elgon",
+      //   price: "$8.50/kg",
+      //   description: "Premium Arabica with wine-like acidity and floral tones.",
+      //   image: "/images/green-beans.jpg",
+      // },
       {
         id: 2,
         name: "Medium Roast",
@@ -34,7 +34,7 @@ const Products = () => {
         origin: "Kibale Forest",
         price: "$6.20/kg",
         description: "Deep-bodied Robusta with chocolatey and nutty flavors.",
-        image: "/images/coffee.png",
+        image: "/images/coffee-medium-dark-roast2.png",
       },
             {
         id: 4,
@@ -43,7 +43,7 @@ const Products = () => {
         origin: "Kibale Forest",
         price: "$6.20/kg",
         description: "Deep-bodied Robusta with chocolatey and nutty flavors.",
-        image: "/images/coffee.png",
+        image: "/images/coffee-dark-roast2.png",
       },
 
     ],
