@@ -14,6 +14,7 @@ export default function Home() {
         <meta name="description" content="Discover the finest coffee blends and artisanal brewing methods" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      {/* <Menu /> */}
       
       <Header />
       <Hero />
