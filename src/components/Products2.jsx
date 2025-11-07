@@ -4,7 +4,7 @@ import { useState } from "react";
 import { FaSeedling, FaFire, FaLeaf, FaShoppingCart } from "react-icons/fa";
 import Image from "next/image";
 
-const Products = () => {
+const Products2 = () => {
   const [activeCategory, setActiveCategory] = useState("green-beans");
 
   const products = {
@@ -53,13 +53,9 @@ const Products = () => {
     <section className="products" id="products">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">Our Coffee Selection</h2>
-          <p className="section-subtitle">
-            From the lush hills of Uganda — crafted for global taste.
-          </p>
+          <h2 className="section-title">Continental Blend (Morning Energy Strength Blend)</h2>
         </div>
 
-          <h2 className="section-title2">Premium Speciality Coffee (Arabica Supreme)</h2>
         {/* Product Grid */}
         <div className="products-grid">
           {products[activeCategory].map((product) => (
@@ -96,33 +92,36 @@ const Products = () => {
         </div>
 
         {/* Wholesale CTA */}
-        {/* <div className="wholesale-cta">
+        <div className="wholesale-cta">
           <h3>Partner with Us</h3>
           <p>
             We supply coffee shops, roasteries, and distributors globally with premium Ugandan coffee.
             Ask about custom roasting, private labels, or export partnerships.
           </p>
           <button>Become a Partner</button>
-        </div> */}
+        </div>
       </div>
 
       <style jsx>{`
         .products {
-          padding: 6rem 0;
+          padding: 0rem 0;
           background: #faf8f5;
-          padding-bottom:0.5rem;
         }
 
         .section-header {
-          text-align: center;
-          margin-bottom: 3rem;
+          text-align: left;
+          margin-bottom: 1rem;
+          margin-left:1rem;
         }
 
         .section-title {
-          font-size: 3rem;
+          font-size: 2rem;
           color: #2c1810;
-          margin-bottom: 0.5rem;
+          margin-bottom: 0.1rem;
           font-family: "Playfair Display", serif;
+          padding-left: 2rem;
+          padding-top: 1rem;
+
         }
 
         .section-subtitle {
@@ -252,17 +251,9 @@ const Products = () => {
           transform: translateY(-3px);
           background: #ffd700;
         }
-                  .section-title2 {
-          font-size: 2rem;
-          color: #2c1810;
-          margin-bottom: 0.3rem;
-          font-family: "Playfair Display", serif;
-          padding-left: 2rem;
-        }
-
       `}</style>
     </section>
   );
 };
 
-export default Products;
+export default Products2;
