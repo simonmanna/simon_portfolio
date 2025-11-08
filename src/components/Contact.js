@@ -57,7 +57,8 @@ export default function Contact() {
                 </div>
                 <div className="info-content">
                   <h4>Our Location</h4>
-                  <p>Kampala, Uganda<br />East Africa</p>
+                  <p>Soweto Road Kiwempe, Makindye Division</p>
+                  <p>Kampala, Uganda</p>
                 </div>
               </div>
 
@@ -67,7 +68,7 @@ export default function Contact() {
                 </div>
                 <div className="info-content">
                   <h4>Phone & WhatsApp</h4>
-                  <p>+256 XXX XXX XXX<br />Available 24/7 for urgent inquiries</p>
+                  <p>+256 754271170<br />Available 24/7 for urgent inquiries</p>
                   <div className="chat-buttons">
                     <button className="chat-btn whatsapp">
                       <FaWhatsapp />
@@ -87,7 +88,7 @@ export default function Contact() {
                 </div>
                 <div className="info-content">
                   <h4>Email Us</h4>
-                  <p>sales@ugandagoldbeans.com<br />info@ugandagoldbeans.com</p>
+                  <p>sales@vidapals.com<br />info@vidapals.com</p>
                 </div>
               </div>
 
@@ -97,21 +98,10 @@ export default function Contact() {
                 </div>
                 <div className="info-content">
                   <h4>Business Hours</h4>
-                  <p>Monday - Friday: 8:00 - 18:00<br />Saturday: 9:00 - 14:00<br />EAT (UTC+3)</p>
+                  <p>Monday - Saturday: 8:00 - 18:00 EAT (UTC+3)</p>
                 </div>
               </div>
 
-              {/* Quick Stats */}
-              <div className="contact-stats">
-                <div className="contact-stat">
-                  <div className="stat-number">2-4</div>
-                  <div className="stat-label">Hours Response Time</div>
-                </div>
-                <div className="contact-stat">
-                  <div className="stat-number">24/7</div>
-                  <div className="stat-label">Urgent Support</div>
-                </div>
-              </div>
             </div>
 
             {/* Contact Form */}
@@ -140,18 +130,6 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     placeholder="your.email@company.com"
-                  />
-                </div>
-
-                <div className="form-group">
-                  <label htmlFor="company">Company Name</label>
-                  <input
-                    type="text"
-                    id="company"
-                    name="company"
-                    value={formData.company}
-                    onChange={handleChange}
-                    placeholder="Your company or roastery"
                   />
                 </div>
 

@@ -20,30 +20,30 @@ const Products = () => {
       // },
       {
         id: 2,
-        name: "Medium Roast",
-        type: "Robusta",
-        origin: "Kibale Forest",
+        name: "Premium Speciality Coffee (Arabica Supreme)",
+        type: "Arabica",
+        origin: "Mount Elgon",
         price: "$6.20/kg",
-        description: "Deep-bodied Robusta with chocolatey and nutty flavors.",
-        image: "/images/coffee.png",
+        description: "A luxurious blend crafted from the finest high-grown Arabica beans. This coffee delivers a silky texture, floral aroma, and gentle chocolate undertones, creating a smooth, well-balanced cup. Perfect for those who appreciate refinement in every sip.",
+        image: "/images/coffee-medium-dark-roast2.png",
       },
       {
         id: 3,
-        name: "Medium Dark Roast",
-        type: "Robusta",
-        origin: "Kibale Forest",
+        name: "Continental Blend Speciality (Morning Energy Strength Blend)",
+        type: "Arabica",
+        origin: "Mount Elgon",
         price: "$6.20/kg",
-        description: "Deep-bodied Robusta with chocolatey and nutty flavors.",
+        description: "For those who crave a little extra kick, our Continental Blend Speciality brings together the smoothness of Arabica with the robust character of premium Robusta. It’s slightly stronger, offering a rich crema and a satisfying depth that powers your mornings with balanced intensity.",
         image: "/images/coffee-medium-dark-roast2.png",
       },
             {
         id: 4,
-        name: "Dark Roast",
-        type: "Robusta",
-        origin: "Kibale Forest",
+        name: "Premium Light Coffee",
+        type: "Arabica",
+        origin: "Mount Elgon",
         price: "$6.20/kg",
-        description: "Deep-bodied Robusta with chocolatey and nutty flavors.",
-        image: "/images/coffee-dark-roast2.png",
+        description: "Our Premium Light Coffee is a beautifully balanced medium roast that celebrates the natural brightness of high-quality Arabica beans. With mild acidity, soft sweetness, and a clean finish, this roast is ideal for those who prefer a lighter, smoother coffee that’s flavorful but never overpowering. Enjoy it any time of the day — it’s coffee that feels as fresh as morning sunlight.",
+        image: "/images/coffee.png",
       },
 
     ],
@@ -59,7 +59,7 @@ const Products = () => {
           </p>
         </div>
 
-          <h2 className="section-title2">Premium Speciality Coffee (Arabica Supreme)</h2>
+          <h2 className="section-title2">Premium Speciality Coffee</h2>
         {/* Product Grid */}
         <div className="products-grid">
           {products[activeCategory].map((product) => (

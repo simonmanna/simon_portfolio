@@ -10,7 +10,7 @@ export default function About() {
           <div className="about-text">
             <h2 className="section-title">Our Story</h2>
             <p>
-              Since 2010, Brew & Bean has been dedicated to bringing you the finest 
+              Vidapal Investments has been dedicated to bringing you the finest 
               coffee experience. We source our beans directly from sustainable farms 
               and roast them in-house to ensure maximum freshness and flavor.
             </p>
