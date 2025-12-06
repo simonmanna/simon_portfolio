@@ -2,7 +2,8 @@ import Head from 'next/head';
 import Header from '../../components/Header';
 //import Hero from '../../components/Hero';
 import Herograndhub from '../../components/Herograndhub';
-import Menu from '../../components/Menu';
+//import Menu from '../../components/Menu';
+import Menugrandhub from '../../components/Menugrandhub';
 import About from '../../components/About';
 import Contact from '../../components/Contact';
 import Footer from '../../components/Footer';
@@ -20,8 +21,7 @@ export default function Home() {
       
       <Header />
       <Herograndhub />
-      <Products/>
-      {/* <Products2/> */}
+      <Menugrandhub />
       <About />
       <Contact />
       <Footer />
