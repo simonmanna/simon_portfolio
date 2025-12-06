@@ -5,7 +5,7 @@ import { Coffee, Rocket } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Hero() {
+export default function Herograndhub() {
   return (
     <section className="relative min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white overflow-hidden"  id="home">
       {/* Background Image */}
@@ -54,7 +54,7 @@ export default function Hero() {
         transition={{ duration: 0.8 }}
       >
         Discover <span className="text-yellow-400">Premium</span> Taste <br />
-        With Every Cup
+        In Grand Hub
       </motion.h1>
 
       <motion.p

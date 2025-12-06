@@ -87,7 +87,7 @@ const Products = () => {
                   <span className="price">{product.price}</span>
                   <button className="inquiry-btn">
                     <FaShoppingCart className="btn-icon" />
-                    Request Quote
+                    Add To Cart
                   </button>
                 </div>
               </div>

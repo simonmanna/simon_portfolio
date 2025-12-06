@@ -1,13 +1,13 @@
 import Head from 'next/head';
-import Header from '../components/Header';
-import Hero from '../components/Hero';
-import Menu from '../components/Menu';
-import About from '../components/About';
-import Contact from '../components/Contact';
-import Footer from '../components/Footer';
-import Products from '../components/Products';
-import Products2 from '../components/Products2';
-import Testimonials from '@/components/Testimonials';
+import Header from '../../components/Header';
+//import Hero from '../../components/Hero';
+import Herograndhub from '../../components/Herograndhub';
+import Menu from '../../components/Menu';
+import About from '../../components/About';
+import Contact from '../../components/Contact';
+import Footer from '../../components/Footer';
+import Products from '../../components/Products';
+import Products2 from '../../components/Products2';
 export default function Home() {
   return (
     <>
@@ -19,11 +19,10 @@ export default function Home() {
       {/* <Menu /> */}
       
       <Header />
-      <Hero />
+      <Herograndhub />
       <Products/>
       {/* <Products2/> */}
       <About />
-      <Testimonials />
       <Contact />
       <Footer />
     </>
