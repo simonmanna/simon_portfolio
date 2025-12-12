@@ -13,7 +13,7 @@ const nextConfig = {
     return [
       {
         source: "/:path*",
-        has: [{ type: "host", value: "grand.vidapals.com" }],
+        has: [{ type: "host", value: "grandhub.vidapals.com" }],
         destination: "/grandhub/:path*",
       },
     ];
