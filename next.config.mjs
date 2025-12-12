@@ -9,29 +9,19 @@ const nextConfig = {
     ],
   },
 
-  // This now works reliably on Vercel (2025)
+  // This works perfectly when grandhub.vidapals.com is added to THIS project
   async rewrites() {
     return [
-      // Handle grandhub.vidapals.com → /grandhub folder
+      // grandhub subdomain → /grandhub folder (clean URLs)
       {
         source: "/:path*",
-        has: [
-          {
-            type: "host",
-            value: "grandhub.vidapals.com",
-          },
-        ],
+        has: [{ type: "host", value: "grandhub.vidapals.com" }],
         destination: "/grandhub/:path*",
       },
-      // Make sure the root (/) also works
+      // Make sure root also works
       {
         source: "/",
-        has: [
-          {
-            type: "host",
-            value: "grandhub.vidapals.com",
-          },
-        ],
+        has: [{ type: "host", value: "grandhub.vidapals.com" }],
         destination: "/grandhub",
       },
     ];
