@@ -1,31 +1,19 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "images.unsplash.com",
-      },
-    ],
-  },
-
-  // This works perfectly when grandhub.vidapals.com is added to THIS project
+// next.config.js
+module.exports = {
   async rewrites() {
     return [
-      // grandhub subdomain → /grandhub folder (clean URLs)
       {
-        source: "/:path*",
-        has: [{ type: "host", value: "grandhub.vidapals.com" }],
-        destination: "/grandhub/:path*",
+        // Check if the host is the subdomain
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'grandhub.vidapals.com', // Your new subdomain
+          },
+        ],
+        // Rewrite the request to the desired path on your Vercel app
+        destination: '/grandhub/:path*', // The folder/page you want to show
       },
-      // Make sure root also works
-      {
-        source: "/",
-        has: [{ type: "host", value: "grandhub.vidapals.com" }],
-        destination: "/grandhub",
-      },
-    ];
+    ]
   },
-};
-
-export default nextConfig;
+}
