@@ -20,12 +20,12 @@ export default function Herograndhub() {
 
 
       {/* Floating Coffee Icons */}
-      <motion.div className="absolute top-20 left-10 text-amber-300" animate={{ y: [0, 20, 0] }} transition={{ duration: 4, repeat: Infinity }}>
+      {/* <motion.div className="absolute top-20 left-10 text-amber-300" animate={{ y: [0, 20, 0] }} transition={{ duration: 4, repeat: Infinity }}>
         <Coffee size={48} />
       </motion.div>
       <motion.div className="absolute bottom-20 right-14 text-amber-400" animate={{ y: [0, -20, 0] }} transition={{ duration: 3.5, repeat: Infinity }}>
         <Coffee size={56} />
-      </motion.div>
+      </motion.div> */}
 
       {/* Hero Content */}
       <motion.h1

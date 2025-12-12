@@ -44,7 +44,7 @@ export default function Menugrandhub() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-amber-900">{drink.name}</h3>
                 <p className="text-gray-600 text-sm mt-1">{drink.desc}</p>
-                <div className="mt-4 text-2xl font-bold text-amber-800">{drink.price}</div>
+                {/* <div className="mt-4 text-2xl font-bold text-amber-800">{drink.price}</div> */}
               </div>
             </div>
           ))}

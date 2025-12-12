@@ -8,6 +8,16 @@ const nextConfig = {
       },
     ],
   },
+
+  async rewrites() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "grand.vidapals.com" }],
+        destination: "/grand/:path*",
+      },
+    ];
+  },
 };
 
 export default nextConfig;
