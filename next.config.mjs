@@ -14,7 +14,7 @@ const nextConfig = {
       {
         source: "/:path*",
         has: [{ type: "host", value: "grand.vidapals.com" }],
-        destination: "/grand/:path*",
+        destination: "/grandhub/:path*",
       },
     ];
   },
